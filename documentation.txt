@@ -1,0 +1,19 @@
+The Azure Blob Storage CRUD API is a programming interface that allows you to perform Create, Read, Update, and Delete (CRUD) operations on Azure Blob Storage resources. Azure Blob Storage is a scalable and cost-effective storage service provided by Microsoft Azure, designed for storing large amounts of unstructured data such as text, images, videos, and documents.
+
+Here's a high-level description of the CRUD operations you can perform using the Azure Blob Storage API:
+
+Upload: The API enables you to upload new blobs in Azure Blob Storage. Blobs can be of three types: block blobs, append blobs, or page blobs. Block blobs are used for general-purpose storage, append blobs are optimized for append-only scenarios, and page blobs are designed for random read/write operations.
+
+Download: You can retrieve the contents of existing blobs using the API. The API supports reading both structured and unstructured data, making it suitable for various types of applications.
+
+Update: The API allows you to update the contents of existing blobs by overwriting or appending data. You can modify specific sections of a blob or replace the entire blob with new data. This enables you to implement scenarios where you need to update or modify stored information.
+
+Delete: With the API, you can delete blobs from Azure Blob Storage. This removes the blob and associated metadata from the storage account, freeing up storage space. Deletion can be done for individual blobs or in bulk, allowing you to manage your storage resources efficiently.
+
+
+
+Endpoint used :
+POST /api/blob/upload
+POST /api/blob/upload
+PUT /api/blob/update/{fileName}
+DELETE /api/blob/delete/{fileName}
